@@ -1,11 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <div id="app">
+    @{{ user.username }}
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {
+      followers: 0,
+      user: {
+        id: 1,
+        username: '_RavinduLakshan',
+        firstName: 'Ravindu',
+        lastName: 'Lakshan',
+        email: 'ravindu@gmail.com',
+        isAdmin: true
+      }
+    }
+  }
 }
 </script>
 
